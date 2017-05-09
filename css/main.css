@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500|Roboto:900");
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?j33ru3");
+  src: url("../fonts/icomoon.eot?j33ru3#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?j33ru3") format("truetype"), url("../fonts/icomoon.woff?j33ru3") format("woff"), url("../fonts/icomoon.svg?j33ru3#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/** Grid variables **/
+/** Grid variables **/
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.full-container {
+  width: 100%;
+  padding: 0 15px; }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .row:before, .row:after {
+    content: '';
+    display: table;
+    clear: both; }
+
+[class*="col-"],
+[class^="col-"] {
+  float: left;
+  padding: 0 15px; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+.col-offset-1 {
+  margin-left: 8.33333%; }
+
+.col-offset-2 {
+  margin-left: 16.66667%; }
+
+.col-offset-3 {
+  margin-left: 25%; }
+
+.col-offset-4 {
+  margin-left: 33.33333%; }
+
+.col-offset-5 {
+  margin-left: 41.66667%; }
+
+.col-offset-6 {
+  margin-left: 50%; }
+
+.col-offset-7 {
+  margin-left: 58.33333%; }
+
+.col-offset-8 {
+  margin-left: 66.66667%; }
+
+.col-offset-9 {
+  margin-left: 75%; }
+
+.col-offset-10 {
+  margin-left: 83.33333%; }
+
+.col-offset-11 {
+  margin-left: 91.66667%; }
+
+/* img responsive*/
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+/*# sourceMappingURL=_grid.css.map */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-google-plus:before {
+  content: "\ea8b"; }
+
+.icon-facebook:before {
+  content: "\ea90"; }
+
+.icon-twitter:before {
+  content: "\ea96"; }
+
+.icon-linkedin2:before {
+  content: "\eaca"; }
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  border: #ffcc00; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #333; }
+
+header {
+  text-align: center;
+  text-transform: uppercase; }
+  header h4 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #898f8f;
+    padding-top: 85px;
+    margin: 0; }
+  header h1 {
+    font-family: 'Roboto';
+    font-size: 3.8rem;
+    color: #ffcc00;
+    padding-bottom: 45px;
+    margin: 0; }
+
+.bonfire {
+  position: relative;
+  padding-bottom: 35px;
+  font-size: 1.43rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border-color: #ffcc00; }
+
+.bonfire::before,
+.bonfire::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 210px;
+  height: 2px;
+  border: 1px solid #ffcc00; }
+
+.bonfire::after {
+  right: 30%;
+  top: 15%; }
+
+.bonfire::before {
+  left: 30%;
+  top: 15%; }
+
+.col-5 img {
+  padding-top: 20%;
+  padding-bottom: 10%; }
+
+.row {
+  position: relative; }
+
+.team-block > div[class^="team"] {
+  position: absolute;
+  width: 92px;
+  height: 92px; }
+
+div[class="team1"] {
+  top: 13%;
+  border-top: 1px solid #ffcc00;
+  left: 36%;
+  border-right: 1px solid #ffcc00; }
+
+div[class="team2"] {
+  top: 13%;
+  border-top: 1px solid #ffcc00;
+  left: 8.5%;
+  border-left: 1px solid #ffcc00; }
+
+div[class="team3"] {
+  top: 67%;
+  border-bottom: 1px solid #ffcc00;
+  left: 36%;
+  border-right: 1px solid #ffcc00; }
+
+div[class="team4"] {
+  top: 67%;
+  border-bottom: 1px solid #ffcc00;
+  left: 8.5%;
+  border-left: 1px solid #ffcc00; }
+
+.about {
+  position: relative;
+  padding-left: 75px;
+  border-left: 2px solid #ffcc00;
+  text-align: center;
+  color: #333; }
+  .about h3 {
+    font-family: 'Roboto';
+    font-size: 2.57rem;
+    font-weight: 900;
+    padding-top: 8%;
+    padding-bottom: 3%; }
+  .about h3::after {
+    right: 35%;
+    top: 25%;
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #ffcc00;
+    width: 100px;
+    height: 1px; }
+  .about h2 {
+    font-size: 1.71rem;
+    font-weight: 400; }
+  .about p {
+    line-height: 1.5;
+    padding-bottom: 15%; }
+  .about p::after {
+    position: absolute;
+    content: "";
+    display: block;
+    right: 39%;
+    bottom: 25%;
+    border-width: 3px;
+    border-color: #ffcc00;
+    border-style: solid;
+    width: 75px; }
+
+.col-4 .col-offset-1 {
+  position: relative; }
+
+.view-profile {
+  color: #666;
+  background: #fff;
+  border: 1px solid #ffcc00;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  margin-bottom: 15%;
+  padding: 5px; }
+  .view-profile:hover, .view-profile:focus {
+    background: #ffcc00;
+    color: #fff; }
+  .view-profile:active {
+    background: rgba(255, 204, 0, 0.8); }
+
+.animation {
+  transition: color 0.5s ease;
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -ms-transition: color 0.5s ease; }
+
+.social-elem {
+  border: 2px solid #333;
+  display: inline-block;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.1rem;
+  opacity: .5; }
+  .social-elem a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    vertical-align: middle; }
+
+a:hover {
+  color: #ffcc00;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease; }
+
+/*# sourceMappingURL=main.css.map */

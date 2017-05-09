@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500|Roboto:900');
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?j33ru3');
+  src:  url('../fonts/icomoon.eot?j33ru3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?j33ru3') format('truetype'),
+    url('../fonts/icomoon.woff?j33ru3') format('woff'),
+    url('../fonts/icomoon.svg?j33ru3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+};
+@import "variables";
+@import "mixin";
+@import "grid";
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-google-plus:before {
+  content: "\ea8b";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+
+*, *:after, *:before{
+	@include box-sizing;
+}
+
+body{
+	font-family: $main-font;
+	color: $font-color;
+}
+
+header{
+	text-align: center;
+	text-transform: uppercase;
+
+	h4{
+		font-size: 1.2rem;
+		line-height: $font-height;		
+		color: #898f8f;	
+		padding-top: 85px;	
+		margin: 0;	
+	}
+
+	h1{
+		font-family: 'Roboto';
+	    font-size: 3.8rem;
+	    color: #ffcc00;
+	    padding-bottom: 45px;
+	    margin: 0;	
+	}
+}
+
+.bonfire{
+	position: relative;
+	padding-bottom: 35px;	
+	font-size: 1.43rem; 
+	font-weight: $font-weight;
+	line-height: $font-height; 
+	text-align: center;
+	border-color: $header-color;
+}
+
+.bonfire::before, 
+.bonfire::after{
+    @include bonfire; 
+}
+
+.bonfire::after{
+	right: 30%;
+    top: 15%;
+}
+.bonfire::before{
+	left: 30%;
+    top: 15%;
+}
+.col-5 img{	
+	 padding-top: 20%; 
+	 padding-bottom: 10%;
+}
+.row{
+	position: relative;
+}
+
+.team-block>div[class^="team"]{
+	@include team;
+}
+div[class="team1"]{
+	@include teamup;
+    @include team_up;
+}
+div[class="team2"]{
+	@include teamup;
+    @include teamup_down;
+}
+div[class="team3"]{
+	@include teamupdown;
+    @include team_up;
+}
+div[class="team4"]{
+	@include teamupdown;
+    @include teamup_down;
+}
+
+.about{
+ 	position: relative;
+ 	padding-left: 75px; 
+ 	border-left: 2px solid $header-color;
+	text-align: center;
+	color:  $font-color;
+	h3{
+		font-family: 'Roboto';
+		font-size: 2.57rem;
+        font-weight: 900;
+        padding-top: 8%;
+    	padding-bottom: 3%;
+    }
+     h3::after{
+		right: 35%;
+        top: 25%; 
+		@include borders; 
+	}
+        
+	h2{
+		font-size: 1.71rem;
+		font-weight: $font-weight;
+	}
+	p{
+		line-height:$font-height;
+		padding-bottom: 15% 
+	}
+	p::after{
+	    position: absolute;
+	    content: "";
+	    display: block;
+	    right: 39%;
+    	bottom: 25%;
+	    border-width: 3px;
+	    border-color: $header-color;
+	    border-style: solid;
+	    width: 75px;
+	}
+}
+
+
+.col-4 .col-offset-1{
+  position: relative;
+}
+
+.view-profile{
+	@include btn-hover(#666, #fff, $header-color);
+	@include transition(all, 0.5s, ease); 
+	margin-bottom: 15%;
+	padding: 5px;
+}
+
+.animation{
+	@include transition(color, 0.5s, ease);
+}
+
+.social-elem{
+	border: 2px solid $font-color;
+    display: inline-block;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.1rem;
+    opacity: .5;
+    	
+ a{
+	color:$font-color;
+	font-size: $font-size;
+    text-decoration: none;
+    vertical-align: middle;	
+  }
+}
+a:hover{
+	color:$header-color;
+	@include transition(all, 0.5s, ease);
+    }

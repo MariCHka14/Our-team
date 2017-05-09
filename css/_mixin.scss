@@ -1,0 +1,90 @@
+@mixin transition($prop, $time, $funct){
+  transition: $prop $time $funct;
+  -webkit-transition: $prop $time $funct;
+  -moz-transition: $prop $time $funct;
+  -o-transition: $prop $time $funct;
+  -ms-transition: $prop $time $funct;
+}
+
+@mixin box-sizing{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+   border:$header-color;   
+}
+
+@mixin btn-hover($color, $bg, $border){
+  color: $color;
+  background: $bg;
+  border: 1px solid $border;
+
+  &:hover, &:focus{
+    background: $border;
+    color: $bg;
+  }
+
+  &:active{
+    background: rgba($border, 0.8);
+  }
+}
+
+@mixin a-hover($color){
+  color: $color;
+  @include transition(all, 0.5s, ease);
+
+  &:hover, &:active, &:focus{
+    opacity: 0.9;
+
+  }
+}
+
+@mixin form-elem{
+  outline: none;
+
+  &:hover, &:focus{
+    color: #ccc;
+  }
+}
+
+@mixin borders{
+      position: absolute;
+      content: "";
+      display: block;
+      background-color: $header-color;
+      width: 100px;
+      height: 1px;
+}
+
+@mixin bonfire{
+        position: absolute;
+        content: '';
+        display: block;        
+        width: 210px;
+        height: 2px;
+        border: 1px solid $header-color;
+}
+@mixin team{
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    }
+@mixin teamup{
+    top:13%;
+    border-top: 1px solid $header-color;
+    }
+@mixin team_up{
+    left: 36%; 
+    border-right: 1px solid $header-color;
+    }
+
+@mixin teamupdown{
+    top: 67%;
+    border-bottom: 1px solid $header-color;
+}
+
+@mixin teamup_down{
+    left: 8.5%;  
+    border-left: 1px solid $header-color;
+}
